@@ -1,0 +1,14 @@
+sample-service:
+  build: ./
+  ports:
+    - "19000:19000"
+  volumes:
+    - /var/log/sample-service
+  # enviroment variables
+  environment:
+    - GC_ALGO=UseG1GC
+    - JAVA_PROCESS_MIN_HEAP=1g
+    - JAVA_PROCESS_MAX_HEAP=1g
+    - CONFIG_ENV=docker
+    - JVM_PARAMS=-Xloggc:/tmp/debugger/gc.log -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/tmp/debugger/
+    - FILE_PATH=data.csv
