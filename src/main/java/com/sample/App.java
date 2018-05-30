@@ -3,7 +3,7 @@ package com.sample;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.sample.config.Config;
 import com.sample.resource.ConversionResource;
-import com.sample.service.ConversionService;
+import com.sample.service.impl.ConversionService;
 import io.dropwizard.Application;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;

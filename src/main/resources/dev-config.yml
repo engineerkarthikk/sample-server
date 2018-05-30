@@ -19,4 +19,4 @@ logging:
       logFormat: "debugger %d [%thread] %-5level %c{15} - [%X{X-Transaction-Key} - %X{X-Request-Key}] - %msg%n%rEx"
 
 fileConfig:
-  filePath:
+  filePath: src/main/resources/data.csv

@@ -2,7 +2,7 @@ package com.sample.resource;
 
 import com.google.common.collect.ImmutableMap;
 import com.sample.bean.ConversionResponse;
-import com.sample.service.ConversionService;
+import com.sample.service.impl.ConversionService;
 import lombok.extern.slf4j.Slf4j;
 
 import javax.ws.rs.*;

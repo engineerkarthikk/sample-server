@@ -1,6 +1,7 @@
-package com.sample.service;
+package com.sample.service.impl;
 
 import com.sample.bean.ConversionResponse;
+import com.sample.service.IConversionService;
 import lombok.extern.slf4j.Slf4j;
 
 import javax.ws.rs.NotFoundException;
@@ -10,7 +11,7 @@ import java.io.IOException;
 import java.util.HashMap;
 
 @Slf4j
-public class ConversionService {
+public class ConversionService implements IConversionService{
 
     private final HashMap<Integer,String> conversionValue;
 
@@ -40,6 +41,7 @@ public class ConversionService {
         return conversionValue;
     }
 
+    @Override
     public ConversionResponse getNumberToWords(Integer value) throws NotFoundException {
         ConversionResponse response=new ConversionResponse();
         if(conversionValue.containsKey(value)){
