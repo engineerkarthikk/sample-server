@@ -5,11 +5,10 @@ Sample server which loads data from csv exposes an api to return number in words
 /v1/convert/{value}
 
 ##Build Instructions
-git clone
-configure filepath in docker-compose file
-mvn clean install
-docker-compose build
-docker-compose up (Service has started running)
+- git clone
+- mvn clean install
+- docker-compose build
+- docker-compose up (Service has started running)
 
 ##Sample request
 
