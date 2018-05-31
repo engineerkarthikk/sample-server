@@ -8,14 +8,13 @@ import com.sample.service.impl.ConversionService;
 import io.dropwizard.Application;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
-import minisu.dropwizard.interpolation.EnvironmentVariableInterpolationBundle;
+//import minisu.dropwizard.interpolation.EnvironmentVariableInterpolationBundle;
 
 public class App extends Application<Config> {
 
     @Override
     public void initialize(Bootstrap<Config> bootstrap){
         super.initialize(bootstrap);
-        bootstrap.addBundle(new EnvironmentVariableInterpolationBundle());
     }
 
     public void run(Config config, Environment environment) throws Exception {
