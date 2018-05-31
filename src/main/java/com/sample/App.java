@@ -8,7 +8,6 @@ import com.sample.service.impl.ConversionService;
 import io.dropwizard.Application;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
-//import minisu.dropwizard.interpolation.EnvironmentVariableInterpolationBundle;
 
 public class App extends Application<Config> {
 
