@@ -13,6 +13,7 @@ RUN apt-get update && \
 
   VOLUME /var/log/sampleserver
 
+
   COPY src/main/resources/data.csv data.csv
   COPY target/sample-server-*.jar server.jar
   COPY target/classes/dev-config.yml dev-config.yml

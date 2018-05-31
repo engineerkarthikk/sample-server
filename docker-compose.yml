@@ -11,4 +11,4 @@ sample-service:
     - JAVA_PROCESS_MAX_HEAP=1g
     - CONFIG_ENV=docker
     - JVM_PARAMS=-Xloggc:/tmp/debugger/gc.log -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/tmp/debugger/
-    - FILE_PATH=data.csv
+    - FILE_PATH=src/main/resources/data.csv

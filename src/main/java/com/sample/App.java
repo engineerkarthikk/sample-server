@@ -2,6 +2,7 @@ package com.sample;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.sample.config.Config;
+import com.sample.dao.impl.ConversionDAO;
 import com.sample.resource.ConversionResource;
 import com.sample.service.impl.ConversionService;
 import io.dropwizard.Application;
@@ -21,7 +22,9 @@ public class App extends Application<Config> {
         environment.getObjectMapper().setSerializationInclusion(JsonInclude.Include.NON_EMPTY);
         environment.getObjectMapper().setSerializationInclusion(JsonInclude.Include.NON_NULL);
 
-        final ConversionService service=new ConversionService(config.getFileConfig().getFilePath());
+
+        final ConversionDAO conversionDAO=new ConversionDAO(config.getFileConfig().getFilePath());
+        final ConversionService service=new ConversionService(conversionDAO);
         final ConversionResource resource=new ConversionResource(service);
 
         /*
