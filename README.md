@@ -1,22 +1,21 @@
-###Description
+##Description
 Sample server which loads data from csv exposes an api to return number in words
 
-###Api
+##Api
 /v1/convert/{value}
 
-###Build Instructions
+##Build Instructions
 git clone
-cd <working directory>
 configure filepath in docker-compose file
 mvn clean install
 docker-compose build
 docker-compose up (Service has started running)
 
-###Sample request
+##Sample request
 
 curl -X GET "http://localhost:19000/v1/convert/1"
 
-###Sample response
+##Sample response
 {
   "key": "one",
   "value": 1
