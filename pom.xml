@@ -8,8 +8,6 @@
     <artifactId>sample-server</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-
-
     <dependencies>
         <dependency>
             <groupId>io.dropwizard</groupId>
@@ -25,16 +23,6 @@
                     <artifactId>log4j-over-slf4j</artifactId>
                 </exclusion>
             </exclusions>
-        </dependency>
-        <dependency>
-            <groupId>io.federecio</groupId>
-            <artifactId>dropwizard-swagger</artifactId>
-            <version>0.7.0</version>
-        </dependency>
-        <dependency>
-            <groupId>io.dropwizard.discovery</groupId>
-            <artifactId>dropwizard-service-discovery-bundle</artifactId>
-            <version>0.9.2</version>
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
@@ -55,11 +43,6 @@
             <groupId>javax.validation</groupId>
             <artifactId>validation-api</artifactId>
             <version>1.1.0.Final</version>
-        </dependency>
-        <dependency>
-            <groupId>io.federecio</groupId>
-            <artifactId>dropwizard-swagger</artifactId>
-            <version>0.7.0</version>
         </dependency>
         <dependency>
             <groupId>com.google.guava</groupId>
